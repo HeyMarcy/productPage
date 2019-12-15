@@ -5,7 +5,6 @@ import Header from "./Header.js";
 import ProductPage from "../ProductPage/ProductPage"
 
 function App() {
-
   return (
     <div className="app">
       <Header />

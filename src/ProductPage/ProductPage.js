@@ -6,9 +6,9 @@ import ProductDetails from './ProductDetails/ProductDetails'
 class ProductPage extends Component {
   render() {
     return (
-      <div>
-        <ProductHero/>
-        <ProductDetails />
+      <div className="product-container">
+           <ProductHero/>
+          <ProductDetails />
       </div>
     )
   }

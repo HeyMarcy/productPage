@@ -13,51 +13,74 @@ export default class ProductDetails extends Component {
 
   render() {
     return (
-      <>
-      <div className="product-detail-container" >
-        <h4 className="category">MEN&apos;S</h4>
-        <h1 className="product-title">Nice T-Shirt</h1>
-        <div className="price"><h4>$60.00</h4></div>
-        <div className="star-rating">stars go here</div>
-        <div className="product-description">
+      <section className="product-details">
+
+        <div>
+          <h4 className="category">MEN&#39;S</h4>
+          <h1 className="product-title">Nice T-Shirt</h1>
+          <h4>$60.00</h4>
+          <div className="note">**stars go here**</div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nisi urna, accumsan eu mi efficitur, efficitur euismod.</p>
+    
+          <hr/>
         </div>
-        <hr/>
-      </div>
 
 
-      <div className="product-options">
-        <div className="options-color">
-          <ul>
-            <li className="color">
-              <button className="color-option-btn">
-              <img src={thumbBlush} alt="blush color" />
-              </button>
-            </li>
- 
-          </ul>
+        <article className="product-options">
+          <div>
+            <h4 className="option-title">Select Color</h4>
+            <ul className="button-list">
+              <li >
+                <button >
+                  <img src={thumbBlush} alt="options" />
+                </button>
+              </li>
+              <li >
+                <button >
+                  <img src={thumbTeal} alt="options" />
+                </button>
+              </li>
+              <li >
+                <button >
+                  <img src={thumbMoss} alt="options" />
+                </button>
+              </li>
+              <li >
+                <button >
+                  <img src={thumbOrange} alt="options" />
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div>
+          <h4 className="option-title">Select Size</h4>
+          <ul className="button-list">
+              <li >
+                <button><span>S</span></button>
+              </li>
+              <li >
+                <button ><span>M</span></button>
+              </li>
+              <li >
+                <button ><span>L</span></button>
+              </li>
+              <li >
+                <button ><span>XL</span></button>
+              </li>
+            </ul>
+          </div>
+          <hr/>
+        </article>
+
+        <div className="product-footer">
+          <div className="product-ctas">
+            <button className="cta">FIND IN STORE</button>
+            <button className="cta secondary">ADD TO CART</button>
+          </div>
+          <p className="additl-info">International shipping restrictions may apply</p>
         </div>
-        <div className="options-size">
-        <ul>
-            <li className="size"><button>S</button></li>
-            <li className="size"><button>M</button></li>
-            <li className="size"><button>L</button></li>
-            <li className="size"><button>XL</button></li>
-          </ul>
-        </div>
-        <hr/>
-      </div>
 
-      <div className="product-footer">
-        <div className="product-ctas">
-          <button className="find-in-store">FIND IN STORE</button>
-          <button className="add-to-cart">ADD TO CART</button>
-        </div>
-        <p className="additl-info">International shipping restrictions may apply</p>
-
-      </div>
-
-      </>
+      </section>
     )
   }
 }
