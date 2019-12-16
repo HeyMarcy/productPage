@@ -22,4 +22,5 @@ My approach here is to present an initial version of the UI layer. With the exce
 - Create button list component. Refactor to map the colors or sizes.
 - Create style for disabled buttons (and disable the 'M' size button).
 - Create hover and selected styles for buttons.
+- Adjust and refine vertical rythm.
 
