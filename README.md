@@ -1,7 +1,9 @@
 # Product Page Code Challenge
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
-The only additional dependency is `node-sass`
-[View the deployed site](https://nostalgic-tesla-5df87c.netlify.com/)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+The only additional dependency is `node-sass`.
+
+[View the deployed site](https://nostalgic-tesla-5df87c.netlify.com/).
 
 ### Usage
 
