@@ -70,7 +70,8 @@ button.cta {
   @media screen and (min-width: 800px) {
     width: 50%;
     margin-right: 15px;
-    &:last-child {
+    &:nth-child(1) { order: 2; }
+    &:first-child {
       margin-right:0;
     }
   }
