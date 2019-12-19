@@ -1,17 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react'
 import "./ProductPage.scss";
 import ProductHero from './ProductHero/ProductHero'
 import ProductDetails from './ProductDetails/ProductDetails'
 
-class ProductPage extends Component {
-  render() {
-    return (
-      <div className="product-container">
-          <ProductHero/>
-          <ProductDetails />
-      </div>
-    )
-  }
-}
+const ProductPage = ({products}) => 
+  <div className="product-container">
+      <ProductHero/>
+      { products.map((product, i) =>
+      <ProductDetails key={i} {...product} />)
+      }
+      
+  </div>
+    
+  
 
 export default ProductPage

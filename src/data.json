@@ -1,0 +1,22 @@
+[
+    {
+    "category": "Men's",
+    "title": "Nice T-Shirt",
+    "rating": 3,
+    "price": "60.00",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nisi urna, accumsan eu mi efficitur, efficitur euismod.",
+    "colors": [
+      {"Blush": true},
+      {"Teal": true},
+      {"Moss": true},
+      {"Orange": true}
+    ],
+    "sizes": [
+      {"S": true},
+      {"M": false},
+      {"L": true},
+      {"XL": true}
+    ],
+    "shippingInfo": "International shipping restrictions may apply "
+  }
+]

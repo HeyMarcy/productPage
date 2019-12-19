@@ -1,20 +1,32 @@
 import React from 'react'
 import "./ProductDetails.scss"
+import ButtonList from "./ButtonList"
 import thumbBlush from "../../img/thumb-blush.png";
 import thumbMoss from "../../img/thumb-moss.png";
 import thumbOrange from "../../img/thumb-orange.png";
 import thumbTeal from "../../img/thumb-teal.png";
 
-const ProductDetails= () => {
-  return (
+
+const ProductDetails = ({
+  category,
+  title,
+  rating,
+  price,
+  description,
+  colors,
+  sizes,
+  shippingInfo
+}) => 
+
     <section className="product-details">
 
       <div>
-        <h4 className="category">MEN&#39;S</h4>
-        <h1 className="product-title">Nice T-Shirt</h1>
-        <h4>$60.00</h4>
+        <h4 className="category">{category}</h4>
+<h1 className="product-title">{title}</h1>
+        <h4>${price}</h4>
         <div className="note">**stars go here**</div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nisi urna, accumsan eu mi efficitur, efficitur euismod.</p>
+        <p>{description}</p>
+     
   
         <hr/>
       </div>
@@ -48,18 +60,12 @@ const ProductDetails= () => {
         <div>
         <h4 className="option-title">Select Size</h4>
         <ul className="button-list">
-            <li >
-              <button><span>S</span></button>
-            </li>
-            <li >
-              <button ><span>M</span></button>
-            </li>
-            <li >
-              <button ><span>L</span></button>
-            </li>
-            <li >
-              <button ><span>XL</span></button>
-            </li>
+          { 
+            sizes.map((size, i) => {
+              const currentSize = Object.keys({...size})
+              return(<ButtonList key={i} size={currentSize} />)
+            })
+          }
           </ul>
         </div>
         <hr/>
@@ -74,7 +80,6 @@ const ProductDetails= () => {
       </div>
 
     </section>
-  )
-}
+
 
 export default ProductDetails
