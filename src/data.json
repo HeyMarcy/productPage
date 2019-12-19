@@ -6,10 +6,10 @@
     "price": "60.00",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nisi urna, accumsan eu mi efficitur, efficitur euismod.",
     "colors": [
-      {"Blush": true},
-      {"Teal": true},
-      {"Moss": true},
-      {"Orange": true}
+      {"Blush": "../../img/thumb-blush.png"},
+      {"Teal": "../../img/thumb-moss.png"},
+      {"Moss": "../../img/thumb-orange.png"},
+      {"Orange": "../../img/thumb-teal.png"}
     ],
     "sizes": [
       {"S": true},
@@ -20,4 +20,3 @@
     "shippingInfo": "International shipping restrictions may apply "
   }
 ]
-
