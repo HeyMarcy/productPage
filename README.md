@@ -10,6 +10,7 @@ My approach here is to present an initial version of the UI layer. With the exce
 **Missing items included: the header, breadcrumbs, star-rating icons and an icon in the footer area.+*
 
 Branch: **stepTwo-props**
+
 This is the first iteration of the application. Created a json file to hold product data. Data is passed as props. Created button list component.
 
 ### Usage
@@ -22,11 +23,14 @@ Just fork or clone this repository, run `yarn` and you should be ready to go.
   `yarn build` will bundle everything up on your `/dist` folder
 
 ### To-Dos:
-- Add responsive header
-- Add 'emotion' and refactor components to include styles.
-- Create state to hold selections.
-- Create 'select color' and 'select size' components using ButtonList.
-- Create style for disabled buttons (and disable the 'M' size button).
-- Create hover and selected styles for buttons.
-- Adjust and refine vertical rythm.
+- [ ] Add responsive header.
+- [ ] Add 'emotion' and refactor components to include styles.
+- [x] Create buttonList component.
+- [x] Create json for product data.
+- [ ] Create state to hold selections.
+- [ ] Create 'select color' and 'select size' components using ButtonList.
+- [ ] Create style for disabled buttons (and disable the 'M' size button).
+- [ ] Create hover and selected styles for buttons.
+- [ ] Adjust and refine vertical rythm.
+
 
