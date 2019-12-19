@@ -1,6 +1,13 @@
 import React from 'react'
 import "./ProductDetails.scss"
 import { ColorSelects, SizeSelects } from "./Selects"
+import {ButtonList} from "./ButtonList"
+import thumbBlush from "../../img/thumb-blush.png";
+import thumbMoss from "../../img/thumb-moss.png";
+import thumbOrange from "../../img/thumb-orange.png";
+import thumbTeal from "../../img/thumb-teal.png";
+
+
 const ProductDetails = ({
   category,
   title,
@@ -23,11 +30,46 @@ const ProductDetails = ({
         <hr/>
       </div>
 
-      <div className="product-options">
-        <ColorSelects colors={colors} />
-        <SizeSelects sizes={sizes} />
+      <article className="product-options">
+        <div>
+          <h4 className="option-title">Select Color</h4>
+          <ul className="button-list">
+            <li >
+              <button >
+                <img src={thumbBlush} alt="options" />
+              </button>
+            </li>
+            <li >
+              <button >
+                <img src={thumbTeal} alt="options" />
+              </button>
+            </li>
+            <li >
+              <button >
+                <img src={thumbMoss} alt="options" />
+              </button>
+            </li>
+            <li >
+              <button >
+                <img src={thumbOrange} alt="options" />
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div>
+          {/* <SizeSelects sizes={sizes} /> */}
+        <h4 className="option-title">Select Size</h4>
+        <ul className="button-list">
+          { 
+            sizes.map((size, i) => {
+              const currentSize = Object.keys({...size})
+              return(<ButtonList key={i} size={currentSize} />)
+            })
+          }
+          </ul>
+        </div>
         <hr/>
-      </div>
+      </article>
 
       <div className="product-footer">
         <div className="product-ctas">

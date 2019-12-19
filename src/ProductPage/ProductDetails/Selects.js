@@ -12,7 +12,7 @@ const ColorButtonList = (obj, key=0, value=1) => {
   return (
   <li>
     <button>
-    <img src={obj[key]} alt={obj[value]} />
+    <img src={obj[value]} alt={obj[key]} />
     </button>
   </li>
   )
