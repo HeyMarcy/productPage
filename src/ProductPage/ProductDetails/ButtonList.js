@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function ButtonList({size}) {
+const ButtonList = ({size}) => {
   return (
     <li>
       <button><span>{size[0]}</span></button>
