@@ -24,10 +24,10 @@ Just fork or clone this repository, run `yarn` and you should be ready to go.
 ### To-Dos:
 - [ ] Add responsive header.
 - [ ] Add 'emotion' and refactor components to include styles.
-- [x] Create buttonList component.
-- [x] Create json for product data.
+- [x] ~~Create buttonList component.~~
+- [x] ~~Create json for product data.~~
 - [ ] Create state to hold selections.
-- [ ] Create 'select color' and 'select size' components using ButtonList.
+- [x] ~~Create 'select color' and 'select size' components using ButtonList.~~
 - [ ] Create style for disabled buttons (and disable the 'M' size button).
 - [ ] Create hover and selected styles for buttons.
 - [ ] Adjust and refine vertical rythm.
