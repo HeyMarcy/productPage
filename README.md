@@ -5,12 +5,11 @@ The only additional dependency is `node-sass`.
 
 [View the deployed site](https://nostalgic-tesla-5df87c.netlify.com/).
 ## Intent:
-Branch: **stepOne-ui**
+#### Branch: `stepOne-ui`
 My approach here is to present an initial version of the UI layer. With the exception of this `READ ME` all the work was completed within 2 hours. 
 **Missing items included: the header, breadcrumbs, star-rating icons and an icon in the footer area.+*
 
-Branch: **stepTwo-props**
-
+#### Branch: **stepTwo-props**
 This is the first iteration of the application. Created a json file to hold product data. Data is passed as props. Created button list component.
 
 ### Usage
